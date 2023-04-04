@@ -36,4 +36,4 @@ for (l, o) in zip(labelSent, offsetSent):
 print("LABEL SPANS:")
 spanList = biobert_fun.gene_span(labelSent, offsetSent)
 for sp in spanList:
-    print(test_sent[sp[0]: sp[1]])
+    print(test_sent[sp[0] : sp[1]])

@@ -18,3 +18,9 @@ import os
 os.environ["KMP_DUPLICATE_LIB_OK"] = "True"
 
 import tensorflow as tf
+import torch
+
+device = torch.device("mps")
+device_name = tf.test.gpu_device_name()
+
+print(device)
